@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Number</title>
+</head>
+<style>
+    Main{
+        background-color:cornsilk;
+        min-height:100%;
+        width:50%;
+        margin:auto;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #label{
+
+        text-align: center;
+    }
+    #input{
+        height:10vh;
+        width:30vw;
+        font-size: 5em;
+        font-weight: bold;
+        text-align: center;
+        border: solid black 2px;
+        margin-bottom: 40px;
+    }
+    #button{
+        margin-left: 20px;
+        height:50px;
+        width:80px;
+        background-color: bisque;
+        border-radius: 8px;
+    }
+    .prev{
+        margin-left:20px;
+        font-size: large;
+        font-weight: 15px;
+    }    
+    
+</style>
+<body>
+    <Main>
+        <h2>Guess No. between  1 to 100 </h2>
+        <div class="take">
+            <label for="input" id="label"><h1>Guess a Number</h1></label>
+            <input type="text" id="input">
+        </div>
+        <div id="parseResult">
+            <button id="button">Submit</button>
+            <p class="prev">Previous guess : <span id="array"></span></p> 
+            <p class="prev">You have  <span id="left">6</span> Chances left</p>
+           <span id="message"></span>
+        </div>
+
+    </Main>
+    <script src="Guess.js"></script>
+</body>
+</html>
